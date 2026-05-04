@@ -1,0 +1,56 @@
+[
+  {
+    "id": "skeepers",
+    "company": "Skeepers",
+    "role": "Creadora UGC Seleccionada",
+    "period": "2023 - Presente",
+    "description": "Creación de contenido profesional. Participación en eventos de marca (Rabanne, etc). Colaboración con marcas premium.",
+    "insight": "Aprendí los estándares de calidad de agencias top y cómo funciona el mundo profesional del UGC.",
+    "icon": "briefcase"
+  },
+  {
+    "id": "yesstyle",
+    "company": "YesStyle / Stylevana",
+    "role": "Colaboradora UGC",
+    "period": "2023 - Presente",
+    "description": "Creación de UGC para e-commerce Asia. Content strategy. Product demos.",
+    "insight": "E-commerce requiere precision extrema en conversión y comprensión del comportamiento del comprador.",
+    "icon": "shopping-bag"
+  },
+  {
+    "id": "charlotte",
+    "company": "Charlotte Tilbury",
+    "role": "Afiliada + Creadora de Contenido",
+    "period": "2022 - Presente",
+    "description": "Contenido de belleza y lifestyle. Recomendaciones auténticas. Creación de tutoriales y reviews.",
+    "insight": "Sector belleza requiere expertise profundo y conexión emocional con la audiencia.",
+    "icon": "sparkles"
+  },
+  {
+    "id": "hablemos",
+    "company": "Hablemos de Marca",
+    "role": "Estudiante de Formación UGC",
+    "period": "2022 - 2023",
+    "description": "Especialización en UGC profesional. Metodología y best practices de Daniela Salazar.",
+    "insight": "Transformé pasión en skill profesional y entendí la estrategia detrás del UGC efectivo.",
+    "icon": "book"
+  },
+  {
+    "id": "adobe",
+    "company": "Adobe Campaign Classic",
+    "role": "Experiencia en Marketing Automation",
+    "period": "2021 - 2024",
+    "description": "Automatización de marketing. Segmentación y análisis de datos. Optimización de conversión.",
+    "insight": "Sé exactamente cómo funciona la máquina detrás del marketing y el data-driven decision making.",
+    "icon": "zap"
+  },
+  {
+    "id": "psychology",
+    "company": "Estudios de Psicología",
+    "role": "Estudiante",
+    "period": "2021 - Presente",
+    "description": "Comprensión del comportamiento del consumidor. Triggers emocionales. Decisión de compra.",
+    "insight": "Todo contenido funciona porque entiende la mente. La psicología es el corazón de la conversión.",
+    "icon": "brain"
+  }
+]

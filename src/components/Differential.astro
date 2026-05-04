@@ -1,0 +1,240 @@
+---
+---
+
+<section class="differential" id="diferencial">
+  <div class="container mx-auto px-4">
+    <div class="differential-content grid-2">
+      {/* Left Text */}
+      <div class="differential-text">
+        <h2>El Diferencial: Marketing Digital Meets Psicología</h2>
+        <div class="divider-small my-6"></div>
+
+        <div class="differential-body">
+          <p>
+            La mayoría de creadores UGC hacen contenido que se ve bien.
+          </p>
+
+          <p>
+            Yo hago contenido que funciona porque entiendo tanto
+            la parte creativa como la parte estratégica y humana.
+          </p>
+
+          <h3 class="text-xl font-serif font-bold mt-8 mb-4">Mi Background Técnico:</h3>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3">
+              <span class="text-accent font-bold">●</span>
+              <span><strong>Adobe Campaign Classic:</strong> Automatización de marketing, segmentación, datos</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-accent font-bold">●</span>
+              <span><strong>Análisis de Datos:</strong> Comportamiento del consumidor, optimización de conversión</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-accent font-bold">●</span>
+              <span><strong>Psicología Aplicada:</strong> Triggers emocionales, decisión de compra</span>
+            </li>
+          </ul>
+
+          <div class="insight-box bg-light-card p-6 rounded-lg border-l-4 border-accent">
+            <p class="text-sm font-semibold text-gray-700 mb-2">Esto significa:</p>
+            <p class="text-gray-800 leading-relaxed">
+              No solo creo videos. Creo contenido pensando en ¿cuál es el trigger emocional que genera decisión? ¿Cómo segmento el mensaje para diferentes audiencias? ¿Qué timing y context hace que sea más efectivo?
+            </p>
+          </div>
+
+          <p class="mt-6 font-semibold text-accent">
+            Eso es lo que marcas grandes buscan.
+            No contenido bonito.
+            Contenido que entiende por qué la gente compra.
+          </p>
+        </div>
+      </div>
+
+      {/* Right: Visual / Infografía */}
+      <div class="differential-visual">
+        <div class="venn-diagram">
+          <div class="circle circle-1">
+            <span>Creatividad</span>
+          </div>
+          <div class="circle circle-2">
+            <span>Estrategia</span>
+          </div>
+          <div class="circle circle-3">
+            <span>Psicología</span>
+          </div>
+          <div class="venn-center">
+            <p class="text-sm font-bold text-white">Contenido que</p>
+            <p class="text-lg font-bold text-white">Convierte</p>
+          </div>
+        </div>
+
+        <div class="stats-box mt-8">
+          <div class="stat-item">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Años experiencia UGC</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Proyectos completados</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Marcas colaboradoras</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .differential {
+    padding: 120px 0;
+    background: linear-gradient(135deg, var(--color-light-bg) 0%, var(--color-light-card) 100%);
+  }
+
+  @media (max-width: 768px) {
+    .differential {
+      padding: 60px 0;
+    }
+  }
+
+  .differential-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .differential-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .differential-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .differential-body p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .differential-body h3 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .insight-box {
+    background-color: white;
+  }
+
+  .venn-diagram {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .circle-1 {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background: rgba(212, 165, 116, 0.1);
+    color: #d4a574;
+  }
+
+  .circle-2 {
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: 50px;
+    background: rgba(212, 165, 116, 0.15);
+    color: #b8935f;
+  }
+
+  .circle-3 {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    background: rgba(212, 165, 116, 0.1);
+    color: #d4a574;
+  }
+
+  .venn-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-accent);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .stats-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: #666;
+    font-weight: 500;
+  }
+
+  .divider-small {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-accent);
+  }
+</style>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "product-1",
+    "title": "Skeepers - Rabanne Event",
+    "category": "branded-experience",
+    "description": "Contenido from Rabanne event for luxury brand campaign",
+    "image": "/images/portfolio/portfolio-1.jpg",
+    "video": "/videos/portfolio/portfolio-1.mp4",
+    "brands": ["Skeepers", "Rabanne"],
+    "tags": ["UGC", "Evento", "Lujo"]
+  },
+  {
+    "id": "product-2",
+    "title": "Charlotte Tilbury - Beauty Tutorial",
+    "category": "product",
+    "description": "Product demo y tutorial de belleza con conversión",
+    "image": "/images/portfolio/portfolio-2.jpg",
+    "video": "/videos/portfolio/portfolio-2.mp4",
+    "brands": ["Charlotte Tilbury"],
+    "tags": ["Belleza", "Tutorial", "Product Demo"]
+  },
+  {
+    "id": "lifestyle-1",
+    "title": "YesStyle - Lifestyle & Fashion",
+    "category": "lifestyle",
+    "description": "Contenido lifestyle con producto integrado naturalmente",
+    "image": "/images/portfolio/portfolio-3.jpg",
+    "video": "/videos/portfolio/portfolio-3.mp4",
+    "brands": ["YesStyle"],
+    "tags": ["Lifestyle", "Fashion", "Authenticity"]
+  },
+  {
+    "id": "ads-1",
+    "title": "E-commerce Ads - Conversión Optimizada",
+    "category": "ads",
+    "description": "Video diseñado específicamente para publicidad con hook potente",
+    "image": "/images/portfolio/portfolio-4.jpg",
+    "video": "/videos/portfolio/portfolio-4.mp4",
+    "brands": ["E-commerce"],
+    "tags": ["Ads", "Hook", "Conversión"]
+  },
+  {
+    "id": "ads-2",
+    "title": "Product Focus - Angle de Conversión",
+    "category": "ads",
+    "description": "Enfoque directo en beneficio del producto para ads",
+    "image": "/images/portfolio/portfolio-5.jpg",
+    "video": "/videos/portfolio/portfolio-5.mp4",
+    "brands": ["Marca"],
+    "tags": ["Product", "Ads", "Benefits"]
+  },
+  {
+    "id": "voiceover-1",
+    "title": "Narración Estratégica - Explicación de Producto",
+    "category": "storytelling",
+    "description": "Video con voice over que explica beneficio del producto",
+    "image": "/images/portfolio/portfolio-6.jpg",
+    "video": "/videos/portfolio/portfolio-6.mp4",
+    "brands": ["Brand"],
+    "tags": ["Voice Over", "Educativo", "Estrategia"]
+  }
+]

@@ -1,0 +1,169 @@
+---
+---
+
+<section class="cta-final" id="contacto">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
+      ¿Listo para Crear Contenido que Convierte?
+    </h2>
+
+    <p class="text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+      Cuéntame tu proyecto, tu marca, tu objetivo.
+      Exploremos cómo crear contenido que no solo se vea bien,
+      sino que realmente conecte y convierta.
+    </p>
+
+    <div class="cta-buttons flex flex-col sm:flex-row gap-4 justify-center">
+      <button
+        class="btn btn-primary px-8 py-4"
+        id="cta-brief-final"
+      >
+        Enviar Brief
+      </button>
+      <button
+        class="btn btn-secondary px-8 py-4"
+        id="cta-email-final"
+      >
+        Hablemos por Email
+      </button>
+    </div>
+
+    <p class="text-sm text-gray-300 mt-8">
+      Tiempo de respuesta: 24-48 horas
+    </p>
+
+    {/* Inline Contact Form (hidden initially, shown on click) */}
+    <div class="contact-form-container hidden mt-12" id="contact-form-container">
+      <div class="max-w-md mx-auto bg-white rounded-lg p-8">
+        <h3 class="text-2xl font-serif font-bold text-primary mb-6">
+          Envíame tu Brief
+        </h3>
+        <form id="contact-form" class="space-y-4">
+          <input
+            type="text"
+            placeholder="Tu nombre"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Tu email"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Nombre de tu marca"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent"
+            required
+          />
+          <textarea
+            placeholder="Cuéntame sobre tu proyecto, objetivos y qué tipo de contenido necesitas"
+            rows="5"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="btn btn-primary w-full"
+          >
+            Enviar Brief
+          </button>
+          <button
+            type="button"
+            class="text-sm text-gray-600 hover:text-accent transition-colors"
+            id="close-form"
+          >
+            Cancelar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-final {
+    padding: 120px 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #2a2a2a 100%);
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .cta-final {
+      padding: 60px 0;
+    }
+  }
+
+  .cta-final h2 {
+    font-family: 'Playfair Display', serif;
+    animation: fade-in 0.8s ease-out;
+  }
+
+  .cta-buttons {
+    animation: fade-in 0.8s ease-out 0.2s both;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .contact-form-container {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  .contact-form-container.hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  const ctaBriefFinal = document.getElementById('cta-brief-final');
+  const ctaEmailFinal = document.getElementById('cta-email-final');
+  const contactFormContainer = document.getElementById('contact-form-container');
+  const contactForm = document.getElementById('contact-form');
+  const closeFormBtn = document.getElementById('close-form');
+
+  ctaBriefFinal?.addEventListener('click', () => {
+    contactFormContainer?.classList.remove('hidden');
+  });
+
+  closeFormBtn?.addEventListener('click', () => {
+    contactFormContainer?.classList.add('hidden');
+  });
+
+  ctaEmailFinal?.addEventListener('click', () => {
+    window.location.href = 'mailto:manumateus.ugc@gmail.com?subject=Colaboración%20UGC&body=Hola%20Manuela,%0A%0AQuería%20contactarte%20para%20colaborar...';
+  });
+
+  contactForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(contactForm);
+    const data = {
+      name: formData.get('name') || 'Sin nombre',
+      email: formData.get('email'),
+      brand: formData.get('brand') || 'Sin especificar',
+      message: formData.get('message'),
+    };
+
+    // Send to email via mailto (or you can integrate Formspree, Netlify Forms, etc.)
+    const mailtoBody = `
+Nombre: ${data.name}
+Email: ${data.email}
+Marca: ${data.brand}
+
+Proyecto:
+${data.message}
+    `.trim();
+
+    window.location.href = `mailto:manumateus.ugc@gmail.com?subject=Nuevo%20Brief%20de%20Colaboración&body=${encodeURIComponent(mailtoBody)}`;
+  });
+</script>

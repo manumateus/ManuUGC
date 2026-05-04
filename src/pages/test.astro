@@ -1,0 +1,180 @@
+---
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuela Mateus | Creadora UGC & Consultora de Marketing Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1a1a1a; line-height: 1.6; background: white; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header { background: white; border-bottom: 1px solid #f0f0f0; padding: 20px 0; position: sticky; top: 0; z-index: 100; }
+    .header-content { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 1.25rem; border: 2px solid #d4a574; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+    nav { display: flex; gap: 2rem; }
+    nav a { color: #1a1a1a; text-decoration: none; transition: color 0.3s; }
+    nav a:hover { color: #d4a574; }
+    .hero { min-height: 100vh; display: flex; align-items: center; padding: 60px 20px; }
+    h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2; font-family: 'Playfair Display', serif; }
+    h2 { font-size: 2.25rem; font-weight: 700; margin-bottom: 2rem; font-family: 'Playfair Display', serif; }
+    .subtitle { font-size: 1.125rem; color: #666; margin-bottom: 2rem; font-weight: 300; }
+    .btn { padding: 1rem 2rem; border: 2px solid #d4a574; border-radius: 4px; cursor: pointer; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s; font-family: 'Inter', sans-serif; font-size: 0.875rem; }
+    .btn-primary { background: #d4a574; color: #1a1a1a; }
+    .btn-primary:hover { background: transparent; color: #d4a574; transform: translateY(-2px); }
+    .btn-secondary { background: transparent; color: #1a1a1a; border-color: #d4a574; }
+    .btn-secondary:hover { background: #d4a574; color: #1a1a1a; transform: translateY(-2px); }
+    .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    .section { padding: 120px 20px; }
+    .section-light { background: #f5f5f5; }
+    .section-dark { background: #1a1a1a; color: white; }
+    .card { background: #f9f9f9; padding: 2rem; border-radius: 4px; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.3s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    footer { background: #1a1a1a; color: white; padding: 40px 20px; margin-top: 120px; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 2rem; }
+    footer a { color: #d4a574; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .divider { height: 2px; background: #d4a574; width: 60px; margin: 1.5rem 0; }
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.75rem; }
+      nav { display: none; }
+      .section { padding: 60px 20px; }
+      .hero { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">MM</div>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Contenido que parece real.<br/>Porque lo es.<br/>Pero estratégicamente diseñado para conectar y convertir.</h1>
+      <p class="subtitle">Creadora UGC | Consultora de Marketing Digital | Especialista en Conversión</p>
+      <div class="btn-group">
+        <button class="btn btn-primary">Enviar Brief</button>
+        <button class="btn btn-secondary">Hablemos</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="servicios">
+    <div class="container">
+      <h2 style="text-align: center;">Servicios</h2>
+      <div class="divider" style="margin: 2rem auto;"></div>
+      <p style="text-align: center; color: #666; margin-bottom: 3rem;">Contenido diseñado para vender, no solo para verse bien.</p>
+      <div class="grid">
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">🎬 UGC Videos</h3>
+          <p>Videos de producto cortos, impactantes y diseñados para anuncio (15-60 segundos). Enfoque: Conversión + autenticidad.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">✨ Product Demos</h3>
+          <p>Demostraciones de uso reales y engaging. Formato vertical optimizado. Diferencial: Muestra beneficio, no solo features.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">📸 Lifestyle Content</h3>
+          <p>Contenido contextual que sitúa el producto en la vida real. Objetivo: Connection + relatability con la audiencia.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">🎯 Ads Optimizados</h3>
+          <p>Diseño pensado para performance en publicidad digital. Testing de hooks, ángulos y mensajes. Data-driven.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">🔊 Voice Over / Sin Voz</h3>
+          <p>Videos que funcionan con o sin sonido. Diseño con subtítulos estratégicos. Accesibilidad total.</p>
+        </div>
+        <div class="card">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">🧠 Content Strategy</h3>
+          <p>Consultoría en concepto, ángulo y ejecución. No solo filmación, sino pensamiento estratégico profundo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="container">
+      <h2 style="text-align: center;">Mi Expertise</h2>
+      <div class="divider" style="margin: 2rem auto;"></div>
+      <div class="grid">
+        <div>
+          <h3 style="font-weight: 700; margin-bottom: 1rem;">🎬 Creación de Contenido</h3>
+          <p>✓ Guión y concepto estratégico<br/>✓ Grabación profesional<br/>✓ Edición video avanzada<br/>✓ Motion graphics<br/>✓ Color grading</p>
+        </div>
+        <div>
+          <h3 style="font-weight: 700; margin-bottom: 1rem;">📊 Marketing Digital</h3>
+          <p>✓ Adobe Campaign Classic<br/>✓ Análisis de datos<br/>✓ Optimización de conversión<br/>✓ Segmentación de audience<br/>✓ Testing A/B</p>
+        </div>
+        <div>
+          <h3 style="font-weight: 700; margin-bottom: 1rem;">🧠 Psicología & Estrategia</h3>
+          <p>✓ Comportamiento del consumidor<br/>✓ Triggers emocionales<br/>✓ Decisión de compra<br/>✓ Copywriting estratégico<br/>✓ UX Writing</p>
+        </div>
+        <div>
+          <h3 style="font-weight: 700; margin-bottom: 1rem;">📜 Certificaciones</h3>
+          <p>✓ Formación UGC Profesional<br/>✓ Autorregulación Publicitaria<br/>✓ Psicología aplicada<br/>✓ Desarrollo web<br/>✓ 3+ años experiencia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="contacto">
+    <div class="container" style="text-align: center;">
+      <h2>¿Listo para Crear Contenido que Convierte?</h2>
+      <p class="subtitle" style="color: #ccc; margin: 1rem 0 2rem 0;">Cuéntame tu proyecto, tu marca, tu objetivo. Exploremos cómo crear contenido que realmente conecte y convierta.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <button class="btn btn-primary">Enviar Brief</button>
+        <button class="btn btn-secondary" style="color: white; border-color: white;">Hablemos por Email</button>
+      </div>
+      <p style="color: #999; margin-top: 2rem; font-size: 0.875rem;">Tiempo de respuesta: 24-48 horas</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3 style="margin-bottom: 1rem;">Contacto</h3>
+          <p>Email: <a href="mailto:manumateus.ugc@gmail.com">manumateus.ugc@gmail.com</a><br/>Respuesta: 24-48h</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 1rem;">Redes Sociales</h3>
+          <p><a href="https://instagram.com/manumateus">Instagram</a> | <a href="https://tiktok.com/@manumateus.ugc">TikTok</a> | <a href="https://linkedin.com/in/manuela">LinkedIn</a></p>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 1rem;">Legal</h3>
+          <p><a href="#">Términos</a> | <a href="#">Privacidad</a> | <a href="#">Cookies</a></p>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #333; padding-top: 2rem; text-align: center; color: #999;">
+        <p>© 2026 Manuela Mateus. Construido con amor y estrategia. 🚀</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (this.textContent.includes('Brief')) {
+          alert('Redirigiendo a formulario de contacto...');
+        } else if (this.textContent.includes('Email') || this.textContent.includes('Hablemos')) {
+          window.location.href = 'mailto:manumateus.ugc@gmail.com?subject=Colaboración%20UGC';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

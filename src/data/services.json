@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ugc-videos",
+    "title": "UGC Videos",
+    "description": "Videos de producto cortos, impactantes y diseñados para anuncio.",
+    "icon": "video",
+    "details": [
+      "Duración típica: 15-60 segundos",
+      "Enfoque: Conversión + autenticidad",
+      "Plataformas: TikTok, Instagram Reels, YouTube Shorts"
+    ]
+  },
+  {
+    "id": "product-demos",
+    "title": "Product Demos",
+    "description": "Demostraciones de uso reales y engaging.",
+    "icon": "sparkles",
+    "details": [
+      "Formato: Vertical (TikTok, Reels, Stories)",
+      "Diferencial: Muestra beneficio, no solo features",
+      "Storytelling visual con datos"
+    ]
+  },
+  {
+    "id": "voice-over",
+    "title": "Voice Over + Sin Voz",
+    "description": "Videos que funcionan con o sin sonido.",
+    "icon": "volume2",
+    "details": [
+      "Diseño: Subtítulos estratégicos si es necesario",
+      "Accesibilidad: Funciona con sonido OFF",
+      "Optimización para scroll infinito"
+    ]
+  },
+  {
+    "id": "lifestyle",
+    "title": "Lifestyle Content",
+    "description": "Contenido contextual que sitúa el producto en la vida real.",
+    "icon": "image",
+    "details": [
+      "Objetivo: Connection + relatability",
+      "Formato: Mix de vertical y horizontal",
+      "Integración natural del producto"
+    ]
+  },
+  {
+    "id": "ads-optimized",
+    "title": "Contenido Optimizado para Ads",
+    "description": "Diseño pensado para performance en publicidad digital.",
+    "icon": "target",
+    "details": [
+      "Testing de hooks, ángulos y mensajes",
+      "Optimización para Facebook, Google Ads",
+      "Data-driven iterations"
+    ]
+  },
+  {
+    "id": "strategy",
+    "title": "Content Strategy",
+    "description": "Consultoría en concepto, ángulo y ejecución.",
+    "icon": "brain",
+    "details": [
+      "No solo filmación, sino pensamiento estratégico",
+      "Análisis de marca y público objetivo",
+      "Framework personalizado"
+    ]
+  }
+]

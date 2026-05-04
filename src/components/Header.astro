@@ -1,0 +1,148 @@
+---
+export interface Props {
+  sticky?: boolean;
+}
+
+const { sticky = true } = Astro.props;
+---
+
+<header
+  class={`header ${sticky ? 'sticky' : ''}`}
+  id="header"
+>
+  <nav class="container mx-auto px-4 py-6 flex items-center justify-between">
+    {/* Logo */}
+    <a href="#" class="logo text-2xl font-serif font-bold text-primary hover:text-accent">
+      MM
+    </a>
+
+    {/* Navigation */}
+    <div class="nav-menu hidden md:flex gap-8 items-center">
+      <a href="#sobre" class="nav-link">Sobre Mí</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#experiencia" class="nav-link">Experiencia</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </a>
+
+    {/* CTA Button */}
+    <button class="btn btn-primary hidden md:inline-flex cta-header">
+      Hablemos
+    </button>
+
+    {/* Mobile Menu Toggle */}
+    <button class="md:hidden" id="mobile-menu-toggle" aria-label="Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+
+  {/* Mobile Menu */}
+  <div class="mobile-menu hidden md:hidden bg-light-bg" id="mobile-menu">
+    <div class="container mx-auto px-4 py-6 flex flex-col gap-4">
+      <a href="#sobre" class="nav-link">Sobre Mí</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#experiencia" class="nav-link">Experiencia</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <button class="btn btn-primary">Hablemos</button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    background-color: white;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .header.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  .nav-link {
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: var(--transition-smooth);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .cta-header {
+    margin-left: 2rem;
+  }
+
+  #mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+  }
+
+  .mobile-menu {
+    animation: slide-down 0.3s ease-out;
+  }
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelectorAll('#mobile-menu .nav-link');
+
+  mobileMenuToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close menu when clicking a link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+</script>

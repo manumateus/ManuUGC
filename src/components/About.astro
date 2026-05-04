@@ -1,0 +1,155 @@
+---
+---
+
+<section class="about" id="sobre">
+  <div class="container mx-auto px-4">
+    <div class="about-content grid-2">
+      {/* Left: Text */}
+      <div class="about-text">
+        <h2>Mi Historia</h2>
+        <div class="divider-small"></div>
+
+        <div class="about-body">
+          <p>
+            Soy creadora UGC, consultora de marketing digital y psicóloga estudiante.
+            Esa combinación rara de skills es exactamente lo que hace mi contenido diferente.
+          </p>
+
+          <p>
+            Comencé en desarrollo web y programación, donde aprendí a pensar como estratega.
+            Luego descubrí el marketing digital—Adobe Campaign, automatización, datos, comportamiento del consumidor.
+            Ahí conecté los puntos: la psicología no es un lujo, es el centro de toda comunicación que convierte.
+          </p>
+
+          <p class="pull-quote">
+            "Mi contenido no solo se ve orgánico.
+            Lo es. Pero cada decisión está fundamentada en estrategia."
+          </p>
+
+          <p>
+            Por eso marcas y agencias me buscan: no necesitan otro creador.
+            Necesitan alguien que entienda que el contenido que convierte requiere
+            ser bonito, estratégico y psicológicamente inteligente.
+          </p>
+
+          <p>
+            Eso es lo que hago.
+          </p>
+        </div>
+
+        {/* Badges/Certifications */}
+        <div class="certifications mt-8">
+          <p class="text-sm text-gray-600 font-semibold mb-4">Certificaciones & Background:</p>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-center gap-2">
+              <span class="text-accent">✓</span>
+              Formación UGC Profesional | Hablemos de Marca
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-accent">✓</span>
+              Certificación Autorregulación Publicitaria | Autocontrol
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-accent">✓</span>
+              Background: Desarrollo Web + Adobe Campaign Classic
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-accent">✓</span>
+              Estudiante de Psicología
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Right: Image */}
+      <div class="about-image">
+        <img
+          src="/images/about-photo.jpg"
+          alt="Manuela Mateus"
+          class="w-full h-auto rounded-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 80px 0;
+    background-color: white;
+  }
+
+  @media (max-width: 768px) {
+    .about {
+      padding: 60px 0;
+    }
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .about-text h2 {
+    font-size: 2.25rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .about-body {
+    margin-top: 2rem;
+    line-height: 1.8;
+  }
+
+  .about-body p {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1rem;
+  }
+
+  .pull-quote {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--color-accent);
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 2rem 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--color-accent);
+  }
+
+  .certifications {
+    background-color: var(--color-light-card);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+  }
+
+  .certifications li {
+    color: #666;
+  }
+
+  .about-image {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

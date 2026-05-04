@@ -1,0 +1,115 @@
+---
+import servicesData from '@data/services.json';
+---
+import servicesData from '../data/services.json';
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = 'Servicios',
+  description = 'Contenido diseñado para vender, no solo para verse bien.'
+} = Astro.props;
+---
+
+<section class="services" id="servicios">
+  <div class="container mx-auto px-4">
+    {/* Section Header */}
+    <div class="section-header text-center mb-16">
+      <h2>{title}</h2>
+      <div class="divider-small mx-auto my-4"></div>
+      <p class="text-lg text-gray-600">{description}</p>
+    </div>
+
+    {/* Services Grid */}
+    <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {servicesData.map((service) => (
+        <div class="service-card card hover:shadow-hover transition-all duration-300">
+          <div class="service-icon mb-4 text-3xl">
+            {service.icon === 'video' && '🎬'}
+            {service.icon === 'sparkles' && '✨'}
+            {service.icon === 'volume2' && '🔊'}
+            {service.icon === 'image' && '📸'}
+            {service.icon === 'target' && '🎯'}
+            {service.icon === 'brain' && '🧠'}
+          </div>
+          
+          <h3 class="font-serif font-bold text-xl mb-3 text-primary">
+            {service.title}
+          </h3>
+          
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            {service.description}
+          </p>
+
+          <ul class="space-y-2 text-sm text-gray-700">
+            {service.details.map((detail) => (
+              <li class="flex items-start gap-2">
+                <span class="text-accent font-bold">→</span>
+                <span>{detail}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services {
+    padding: 120px 0;
+    background-color: var(--color-light-bg);
+  }
+
+  @media (max-width: 768px) {
+    .services {
+      padding: 60px 0;
+    }
+  }
+
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0;
+  }
+
+  .section-header .divider-small {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-accent);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background-color: white;
+    border-radius: 4px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+</style>
