@@ -817,6 +817,7 @@ const videoCategories = [
       .logos-grid { grid-template-columns: repeat(3, 1fr); }
       .creds-grid { grid-template-columns: 1fr; }
     }
+
 .strategy-header > div {
   min-width: 0;
 }
@@ -831,19 +832,47 @@ const videoCategories = [
   word-break: normal;
 }
 
+.strategy-item {
+  min-width: 0;
+}
+
 @media (max-width: 640px) {
   .strategy-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.7rem;
   }
 
   .strategy-format {
     width: 100%;
     display: block;
+    line-height: 1.4;
+  }
+
+  .strategy-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .strategy-item {
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid rgba(41, 0, 8, 0.08);
+  }
+
+  .strategy-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 
   .strategy-item p {
     line-height: 1.6;
+  }
+
+  .strategy-list {
+    padding-left: 1.1rem;
+    margin-bottom: 0;
   }
 }
   </style>
@@ -868,11 +897,11 @@ const videoCategories = [
         <div>
           <span class="eyebrow">Portfolio · UGC Creator</span>
           <h1>Manuela Mateus</h1>
-          <p class="subtitle-line">UGC ·Programación · MKT Digital · Psicología</p>
+          <p class="subtitle-line">UGC · Programación · MKT Digital · Psicología</p>
   <p class="lead">
   <strong>Tu marca tiene segundos para sentirse real.</strong><br /><br/>
   Creo contenido desde lo auténtico, no desde un guion vacío. Antes de crear para marcas, empecé construyendo mi propia marca personal, compartiendo experiencias reales y creando una base de confianza con las personas que me siguen.<br /><br/>
-  Trabajo con productos y marcas que usaría, compraría o podría integrar en mi día a día. Mi contenido une storytelling, naturalidad y criterio para que tu marca conecte de una forma más cercana, honesta y humana.
+  Trabajo con productos y marcas que usaría, compraría o podría integrar en mi día a día. Me adapto a distintos nichos siempre que pueda comunicarlos desde un lugar honesto. Mi contenido une storytelling, naturalidad y criterio para que tu marca conecte de una forma más cercana, honesta y humana.
 </p>
           <div class="btn-row">
             <a class="btn btn-primary" href="#portfolio">Ver portfolio</a>
@@ -1056,11 +1085,12 @@ const videoCategories = [
         <h2>Técnica, estrategia<br/>y psicología.</h2>
         <div class="about-grid">
           <div class="about-content">
-            <p>Soy programadora y desarrolladora de aplicaciones web de formación, lo que me da una base técnica sólida para entender cómo funciona lo digital desde dentro.</p>
-            <p>He desarrollado mi carrera en marketing digital, especialmente en el sector bancario, combinando visión técnica con estrategia orientada al usuario. Ese cruce entre tecnología y comportamiento humano es lo que da forma a todo mi contenido.</p>
-            <p>Actualmente estudio Psicología, porque entender cómo sienten y piensan las personas no es un complemento, es el núcleo de comunicar bien. Eso es lo que hace que mi contenido no solo se vea, sino que conecte.</p>
-            <p>Fuera del trabajo practico duatlón, disfruto cocinando y descubriendo nuevos restaurantes. Viajar es otra gran pasión: cada destino es una nueva fuente de inspiración que acaba, de una forma u otra, en lo que creo.</p>
-            <div class="creds-grid">
+            <p>Soy programadora y desarrolladora de aplicaciones web de formación, una base que me ayuda a entender lo digital desde dentro.</p>
+<p>He desarrollado mi carrera en marketing digital, especialmente en el sector bancario, combinando visión técnica, estrategia y experiencia de usuario.</p>
+<p>Actualmente estudio Psicología, porque para mí comunicar bien también implica entender cómo piensan, sienten y deciden las personas.</p>
+<p>Esa mezcla entre tecnología, marketing y comportamiento humano es la que da forma a mi manera de crear contenido.</p>
+<p>Fuera del trabajo practico duatlón, disfruto cocinando, descubriendo nuevos restaurantes y viajando siempre que puedo. Muchas de esas experiencias acaban inspirando la forma en la que observo, cuento y conecto con lo cotidiano.</p>
+<div class="creds-grid">
               <div class="cred-item">
                 <strong>Base técnica</strong>
                 Programadora y desarrolladora de aplicaciones web
